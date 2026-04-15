@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drawing App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Drawing App</h1>
+    <p>Click and drag to draw.</p>
+
+    <div class="controls">
+      <label for="colorPicker">Color:</label>
+      <input type="color" id="colorPicker" value="#000000" />
+
+      <label for="brushSize">Brush Size:</label>
+      <input type="range" id="brushSize" min="1" max="20" value="3" />
+      <span id="brushValue">3</span>
+      <button id="fullscreenBtn">Full Size</button>
+        <select id="brushType">
+            <option value="round">Round</option>
+            <option value="square">Square</option>
+        </select>
+    </div>
+
+    <canvas id="drawingCanvas"></canvas>
+
+    <div class="buttons">
+      <button id="clearBtn">Clear</button>
+      <button id="saveBtn">Save</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
